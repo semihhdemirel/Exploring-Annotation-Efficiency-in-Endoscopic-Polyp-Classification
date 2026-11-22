@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Data, checkpoints and results are never committed
+data/
+checkpoints/
+saved_models/
+results/
+runs/
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+.DS_Store
