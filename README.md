@@ -1,6 +1,6 @@
 # Polyp classification: supervised vs. semi-supervised vs. self-supervised (k-fold)
 
-Code accompanying the manuscript **"TODO: manuscript title"** (TODO: authors, venue, DOI).
+Code accompanying the manuscript **Exploring Annotation Efficiency in Endoscopic Polyp Classification Across Multiple Learning Paradigms**.
 
 Three training paradigms are benchmarked with the same 5-fold protocol and the same metric
 definitions (overall and per-class precision / recall / F1 / specificity with 95% bootstrap CIs,
@@ -24,8 +24,7 @@ confusion matrices, inference time).
   fold5/
 ```
 
-Class folders are read alphabetically (`Normal` -> 0, `Polyp` -> 1). TODO: describe the dataset,
-how to obtain it, and how the folds were generated.
+Class folders are read alphabetically (`Normal` -> 0, `Polyp` -> 1). 
 
 ## Installation
 
@@ -71,8 +70,7 @@ python -m semisupervised.run_usb_kfold --usb_root PATH/TO/Semi-supervised-learni
 python -m semisupervised.evaluate_usb --base_model_dir checkpoints/usb --base_data_dir DATA \
     --num_labels 490 --ulb_num_labels 49600
 ```
-`run_usb_kfold.py` only generates one YAML per run and calls USB's own `train.py`. TODO: document the
-base config values and any change made to USB so that it reads the fold folders above.
+`run_usb_kfold.py` only generates one YAML per run and calls USB's own `train.py`. 
 
 ## Metric definitions
 
@@ -90,4 +88,3 @@ base config values and any change made to USB so that it reads the fold folders 
 
 ## License and citation
 
-TODO: choose a license (e.g. MIT) and add `LICENSE`; add a BibTeX entry once the paper is public.
