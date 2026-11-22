@@ -87,4 +87,5 @@ python -m semisupervised.evaluate_usb --base_model_dir checkpoints/usb --base_da
 * Pretrained weights are downloaded on first use (torchvision / `efficientnet_pytorch`).
 
 ## License and citation
-
+This project is released under the MIT License. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright and permission notice are included in all copies or substantial portions of the software.
+See the LICENSE file for the full license text.
